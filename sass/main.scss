@@ -1,10 +1,6 @@
 @import 'settings/variables';
 @import 'tools';
+@import 'objects';
 
-.logo {
-  &:hover {
+@import 'components/logo';
 
-  }
-}
-
-@include letters-animation($letters-color, 11);
