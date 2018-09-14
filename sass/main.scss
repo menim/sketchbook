@@ -1,0 +1,10 @@
+@import 'settings/variables';
+@import 'tools';
+
+.logo {
+  &:hover {
+
+  }
+}
+
+@include letters-animation($letters-color, 11);

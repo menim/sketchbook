@@ -1,0 +1,44 @@
+/* 
+  get random number in range between min and max value
+*/
+@function random-number($min, $max) {
+  $rand: random();
+  $random-num: $min + floor($rand * (($max - $min) + 1));
+
+  @return $random-num;
+}
+
+
+/* 
+  add letters-animation (change fill property) to every letter in logo element 
+*/
+@mixin letters-animation ($letters-colors, $length-letter) {
+  $len: length($letters-colors);
+
+  @for $i from 1 through $length-letter {
+    .logo {
+      &:hover {
+        .letter {
+          &:nth-child(#{$i}) {
+            animation: letter-animation#{$i} 4s cubic-bezier(.05, .35, 1, .77) infinite;
+          }
+        }
+      }
+    }
+
+    @keyframes letter-animation#{$i} {
+      0% {
+        fill: nth($letters-colors, random-number(1, $len));
+      }
+
+      25% {
+        fill: nth($letters-colors, random-number(1, $len));
+      }
+
+      100% {
+        fill: nth($letters-colors, random-number(1, $len));
+      }
+    }
+  }
+}
+
