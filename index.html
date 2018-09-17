@@ -11,12 +11,6 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/main.css">
-
-        <style>
-          .letter {
-            fill: #FFDAA2;
-          }
-        </style>
     </head>
     <body>
       <svg class="logo l-center" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="3.4 485.1 828.5 111.1" enable-background="new 3.4 485.1 828.5 111.1" xml:space="preserve">
@@ -34,17 +28,5 @@
           <path class="letter" d="M789,594.1h-26.7V487.3H789v48.5h0.3l16.9-48.5h25.5l-17.8,47.1l18,59.7h-26.4l-16.1-54.1h-0.3v54.2H789z"/>
         </g>
       </svg>
-      <script>
-        let letters = document.getElementsByClassName('letter');
-        let colors = ['#01963c', '#fe4239', '#773cbc', '#49c3b1', '#144733', '#513628', '#ff6b00', '#622066','#26cad2'];
-        let len = colors.length;
-        function randomColor(length) {
-          return  Math.floor(Math.random()*((len-1)+1));
-        }
-   
-        Array.from(letters).forEach((letter) => {
-          letter.style.fill = colors[randomColor(len)];    
-        });
-      </script>
     </body>
 </html>
