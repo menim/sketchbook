@@ -1,7 +1,11 @@
 @import 'generic/normalize';
 
-@import 'settings/variables';
 @import 'tools';
+
+@import 'settings/variables';
+@import 'settings/fonts';
+@import 'elements';
 @import 'objects';
+
 @import 'components/logo';
 
