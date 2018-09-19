@@ -1,0 +1,41 @@
+.menu {
+  .menu__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .menu__item {
+    margin-left: 1em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .menu__link {
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+
+      &::after {
+        height: 2px;
+        width: 100%;
+      }
+    }
+
+    &::after {
+      background-color: #603c96;
+      bottom: -2px;
+      content: '';
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      transition: width .5s cubic-bezier(.52, .01, .16, 1);
+      width: 0;
+    }
+  }
+}
