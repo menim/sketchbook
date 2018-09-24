@@ -35,5 +35,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anatoliy <mel198629@gmail.com> (http://artoko.org)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
