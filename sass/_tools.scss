@@ -86,7 +86,7 @@
 @mixin row-color($color) {
   background-color: $color;
   //background-color: rgba($color, .7);
-  box-shadow: .2em 0 0 $color;
+  box-shadow: -.2em 0 0 $color, .2em 0 0 $color;
 }
 
 
