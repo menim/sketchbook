@@ -4,9 +4,9 @@
 
   &:hover {
     cursor: pointer;
-
-    .letter {
-      @include letters-animation($letters-color, 11);
-    }
   }
+}
+
+.letter {
+  @include letters-animation($letters-color, 11);
 }
