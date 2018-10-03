@@ -16,7 +16,7 @@
 }
 
 .menu__item {
-  margin-left: 2em;
+  margin-left: $space-xl;
 
   &:first-child {
     margin-left: 0;
@@ -49,7 +49,7 @@
 
 .menu__link {
   color: $white;
-  font-size: 18px;
+  font-size: $text-md;
   letter-spacing: 1px;
   position: relative;
   text-decoration: none;

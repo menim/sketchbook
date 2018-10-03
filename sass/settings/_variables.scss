@@ -1,3 +1,4 @@
+// colors values
 $green-haze: #01963c;
 $red-orange: #fe4239;
 $studio: #773cbc;
@@ -12,9 +13,21 @@ $black: #000;
 $white: #fff;
 $denim: #1967eb;
 
-$letters-color: $green-haze, $red-orange, $studio, $puerto-rico, $green-pea, $saddle, $blaze-orange, $honey-flower, $scooter;
-
-
+//colors values with opacity
 $black-30-op: rgba($black, .3);
+
+// default spaces
+$space-xxxs: .25em;
+$space-xxs: .375em;
+$space-xs: .5em;
+$space-sm: .75em;
+$space-md: 1.25em;
+$space-lg: 2em;
+$space-xl: 3.25em;
+$space-xxl: 5.25em;
+$space-xxxl: 8.5em;
+
+//list of colors
+$letters-color: $green-haze, $red-orange, $studio, $puerto-rico, $green-pea, $saddle, $blaze-orange, $honey-flower, $scooter;
 
 

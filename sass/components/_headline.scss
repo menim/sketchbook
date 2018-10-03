@@ -8,12 +8,11 @@
 }
 
 .headline__header {
-  font-size: 48px;
+  font-size: $text-xxxl;
 }
 
 .headline__content {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: $text-md;
   margin-top: 32px;
   width: 94%;
 }

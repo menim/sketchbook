@@ -1,2 +1,16 @@
 @include font-face(raleway, '../fonts/raleway-regular');
 @include font-face('raleway thin', '../fonts/raleway-thin');
+
+// base font values
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+$line-height-default: 1.5;
+
+// font sizes
+$text-xs: 1em / $text-scale-ratio * $text-scale-ratio;
+$text-sm: 1em / $text-scale-ratio;
+$text-md: 1em * $text-scale-ratio;
+$text-lg: 1em * $text-scale-ratio * $text-scale-ratio;
+$text-xl: 1em * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
+$text-xxl: 1em * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
+$text-xxxl: 1em * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
