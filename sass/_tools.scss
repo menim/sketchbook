@@ -89,4 +89,11 @@
   box-shadow: -.2em 0 0 $color, .2em 0 0 $color;
 }
 
+// edit font rendering -> tip: use for light text on dark backgrounds
+@mixin fontSmooth {
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+view raw
+
 
