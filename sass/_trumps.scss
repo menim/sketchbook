@@ -1,0 +1,7 @@
+//add multiline backgorund for inline elements;
+.multiline-bg {
+  background-color: $scooter-80-op;
+  box-decoration-break: clone;
+  box-shadow: .5em 0 0 $scooter-80-op, -.5em 0 0 $scooter-80-op;
+  line-height: 1.2;
+}
