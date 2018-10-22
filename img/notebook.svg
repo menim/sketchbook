@@ -1,6 +1,5 @@
 <svg version="1.1" id="Capa_1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px" height="110px"
-	 viewBox="0 0 294.5 171">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="310px" height="168px" viewBox="45 0 210 168">
 <style type="text/css">
 	.st0{fill:#283480;}
 	.st1{fill:#000105;}
@@ -11,8 +10,7 @@
 	.st6{fill:#01963C;}
 	.st7{fill:#000102;}
 	.st8{fill:#FFFFD8;}
-	.st9{font-family:'sans-serif';}
-	.st10{font-size:12px;}
+	.st10{font-size:12px;font-family: sans-serif; }
 </style>
 <path class="st0" d="M87.5,136.5h-76v-104h76c3.3,0,6,2.7,6,6v92C93.5,133.8,90.8,136.5,87.5,136.5z"/>
 <rect x="71.5" y="32.5" class="st1" width="10" height="104"/>
@@ -35,7 +33,7 @@
 	<rect x="273.5" y="65" class="st8" width="12" height="36"/>
 </g>
 <polygon class="st3" points="223.5,145 217.5,141 211.5,145 211.5,135 223.5,135 "/>
-<text transform="matrix(1 0 0 1 45 155)" class="st9 st10">RU</text>
-<text transform="matrix(1 0 0 1 144 155)" class="st9 st10">UK</text>
-<text transform="matrix(1 0 0 1 241 155)" class="st9 st10">EN</text>
+<text x="48" y="153" class="st10">RU</text>
+<text x="146" y="153" class="st10">UK</text>
+<text x="239" y="153" class="st10">EN</text>
 </svg>
