@@ -1,0 +1,38 @@
+.bricks {
+  display: flex;
+  margin: $space-md;
+  width: 100%
+}
+
+.bricks__item--half {
+  width: calc(50% - #{$space-md*2});
+}
+
+.bricks__item--quarter {
+  width: 25%;
+}
+
+.bricks__item--third {
+  width: 33.33%;
+}
+
+.bricks__item {
+  width: calc(100% - #{$space-xs*2});
+  padding: $space-md;
+  margin: $space-xs;
+  background-color: $honey-flower;
+}
+
+.proto__1 {
+  width: 425px;
+  height: 256px;
+  background-color: $scooter;
+  margin: 0 auto;
+}
+
+.proto__2 {
+  width: 200px;
+  height: 256px;
+  background-color: $puerto-rico;
+}
+
