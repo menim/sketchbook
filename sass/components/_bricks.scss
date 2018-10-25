@@ -1,38 +1,58 @@
 .bricks {
   display: flex;
-  margin: $space-md;
-  width: 100%
+   flex-wrap: wrap;
+}
+
+.bricks__item--full {
+  width: 100%;
+ 
 }
 
 .bricks__item--half {
-  width: calc(50% - #{$space-md*2});
+  width: calc(50% - #{$space-xs});
 }
 
 .bricks__item--quarter {
-  width: 25%;
+  width: calc(25% - #{$space-xs});
 }
 
 .bricks__item--third {
-  width: 33.33%;
+  width: calc(33.3333% - #{$space-xs});
+}
+
+.bricks__item--two-third {
+  width: calc(66.6666% - #{$space-xs});
+}
+
+.bricks__item--two-vs-half {
+  width: calc(40% - #{$space-xs});
+}
+
+.bricks__item--two-vs-third {
+  width: calc(60% - #{$space-xs});
 }
 
 .bricks__item {
-  width: calc(100% - #{$space-xs*2});
+  background-color: $denim;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: $space-md;
-  margin: $space-xs;
-  background-color: $honey-flower;
+  margin: 0 $space-xxxs $space-xs;
+  //border: 1px solid $black;
+  text-align: center;
+
+  >.bricks__item {
+    justify-content: space-between;
+    padding: $space-xs;
+  }
+  >.bricks__item--half {
+    width: calc(50% - #{$space-xs} - #{$space-md});
+  }
 }
 
-.proto__1 {
-  width: 425px;
-  height: 256px;
-  background-color: $scooter;
-  margin: 0 auto;
+.link {
+  display: flex;
+  justify-content: space-between;
 }
-
-.proto__2 {
-  width: 200px;
-  height: 256px;
-  background-color: $puerto-rico;
-}
-
