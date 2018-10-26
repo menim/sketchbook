@@ -1,39 +1,39 @@
 .bricks {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .bricks__item--full {
   width: 100%;
- 
 }
 
 .bricks__item--half {
-  width: calc(50% - #{$space-xs});
+  width: $half 
 }
 
 .bricks__item--quarter {
-  width: calc(25% - #{$space-xs});
+  width: $quarter;
 }
 
 .bricks__item--third {
-  width: calc(33.3333% - #{$space-xs});
+  width: $third;
 }
 
 .bricks__item--two-third {
-  width: calc(66.6666% - #{$space-xs});
+  width: $two-third;
 }
 
 .bricks__item--two-vs-half {
-  width: calc(40% - #{$space-xs});
+  width: $two-vs-half;
 }
 
 .bricks__item--two-vs-third {
-  width: calc(60% - #{$space-xs});
+  width: $two-vs-third;
 }
 
 .bricks__item {
   background-color: $denim;
+  border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,8 +44,19 @@
   text-align: center;
 
   >.bricks__item {
+    background-color: $scooter;
     justify-content: space-between;
     padding: $space-xs;
+
+    @include respond-below(xs) {
+      justify-content: center;
+    }
+
+    >img:not(:first-child) {
+      @include respond-below(xs) {
+        display: none;
+      }
+    }
   }
   >.bricks__item--half {
     width: calc(50% - #{$space-xs} - #{$space-md});
@@ -55,4 +66,117 @@
 .link {
   display: flex;
   justify-content: space-between;
+}
+
+.level {
+  @include respond-below(xxl) {
+    width: $two-vs-half;
+  }
+
+  @include respond-below(xl) {
+    width: $full;    
+  }
+
+  >.bricks__item {
+    @include respond-below(xl) {
+      width: $two-vs-half;
+    }
+
+    @include respond-below(l) {
+      width: $half;
+    }
+
+    @include respond-below(m) {
+      width: $two-vs-third;
+    }
+
+    @include respond-below(s) {
+      width: $full;
+    }
+  }
+}
+
+.draw {
+  @include respond-below(xxl) {
+    width: $two-vs-third;
+  }
+
+  @include respond-below(xl) {
+    width: $full;    
+  }
+
+  >.bricks__item {
+    >[src$='ru.png'] {
+      @include respond-below(s) {
+        display: none; 
+      }  
+    }
+  }
+}
+
+.travel {
+  @include respond-below(m) {
+    width: $full;
+  }
+
+  img {
+    @include respond-below(s) {
+      max-width: 100%;
+    }
+  }
+  
+  >.bricks__item {
+    justify-content: center;
+
+    @include respond-below(m) {
+      width: $two-third;
+    }
+
+    @include respond-below(s) {
+      width: $full;
+    }
+  }
+}
+
+.art {
+  
+  @include respond-below(m) {
+    width: $full;
+  }
+
+  >.bricks__item {
+    @include respond-below(m) {
+      width: $two-vs-third;
+    }
+
+    @include respond-below(s) {
+      width: $full;
+    }
+  }
+}
+
+.new-draw {
+  >.bricks__item {
+    justify-content: center;
+
+    @include respond-below(m) {
+      width: $half;
+    }
+
+    @include respond-below(xs) {
+      width: $full;
+    }
+  }
+}
+
+
+.beasts {
+
+  @include respond-below(m) {
+    width: $full;
+  }
+
+  >.bricks__item {
+    justify-content: center;
+  }
 }

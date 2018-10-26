@@ -99,10 +99,11 @@
 
 $breakpoints: (
   xs: 480px,
-  sm: 767px,
-  md: 991px,
-  lg: 1199px, 
-  xl: 1450px 
+  s: 767px,
+  m: 991px,
+  l: 1130px,
+  xl: 1199px, 
+  xxl: 1450px 
 );
 
 // @include respond-below(sm) {}
