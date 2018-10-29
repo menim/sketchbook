@@ -32,7 +32,6 @@
 }
 
 .bricks__item {
-  background-color: $denim;
   border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
@@ -40,11 +39,9 @@
   align-items: center;
   padding: $space-md;
   margin: 0 $space-xxxs $space-xs;
-  //border: 1px solid $black;
   text-align: center;
 
   >.bricks__item {
-    background-color: $scooter;
     justify-content: space-between;
     padding: $space-xs;
 
@@ -63,12 +60,9 @@
   }
 }
 
-.link {
-  display: flex;
-  justify-content: space-between;
-}
-
 .level {
+  background-image: linear-gradient(-45deg, $blaze-orange 0%, $red-orange 100%);
+  
   @include respond-below(xxl) {
     width: $two-vs-half;
   }
@@ -97,6 +91,8 @@
 }
 
 .draw {
+  background-image: linear-gradient(-45deg, $blaze-orange 0%, $red-orange 100%);
+
   @include respond-below(xxl) {
     width: $two-vs-third;
   }
@@ -115,6 +111,7 @@
 }
 
 .travel {
+  background-image: linear-gradient(-45deg, #ad0132 0%, #e8e9ea 100%);
   @include respond-below(m) {
     width: $full;
   }
@@ -139,7 +136,7 @@
 }
 
 .art {
-  
+  background-image: linear-gradient(-45deg, #8f1031 0%, #f4a9dd 100%);
   @include respond-below(m) {
     width: $full;
   }
@@ -156,6 +153,8 @@
 }
 
 .new-draw {
+  background-image: linear-gradient(-45deg, #0067FF 0%, #00245D 100%); 
+  
   >.bricks__item {
     justify-content: center;
 
@@ -169,8 +168,8 @@
   }
 }
 
-
 .beasts {
+  background-image: linear-gradient(-45deg, $blaze-orange 0%, $red-orange 100%);
 
   @include respond-below(m) {
     width: $full;
