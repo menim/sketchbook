@@ -1,3 +1,8 @@
+.features {
+  font-size: $text-base-size;
+  padding: $space-xxl 0 $space-lg;
+}
+
 .features__list {
   display: flex;
   flex-wrap: wrap;
@@ -8,11 +13,12 @@
 .features__item {
   line-height: 1.4;
   list-style: none;
+  margin-bottom: $space-xl;
+  padding: 0 10%;
   text-align: center;
   width: 50%;
-  padding: 0 10%;
 }
 
 .features__description {
-  
+  margin-bottom: 0;
 }
