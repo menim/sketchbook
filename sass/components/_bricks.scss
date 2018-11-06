@@ -41,26 +41,25 @@
   margin: 0 $space-xxxs $space-xs;
   text-align: center;
 
-  >img {
+   img {
     margin-left: $space-md; 
   
     &:first-child {
       margin-left: 0;
     }
+    &:not(:first-child) {
+      @include respond-below(xs) {
+        display: none;
+      }
+    }
   }
 
-  >.bricks__item {
+  .bricks__item {
     //justify-content: space-between;
     padding: $space-xs 0;
      
     @include respond-below(xs) {
       justify-content: center;
-    }
-
-    >img:not(:first-child) {
-      @include respond-below(xs) {
-        display: none;
-      }
     }
   }
 
@@ -82,7 +81,7 @@
     width: $full;    
   }
 
-  >.bricks__item {
+  .bricks__item {
     @include respond-below(xl) {
       width: $two-vs-half;
     }
@@ -114,12 +113,10 @@
     width: $full;    
   }
 
-  >.bricks__item {
-    >[src$='ru.png'] {
-      @include respond-below(s) {
+  img[src$='ru.png'] {
+    @include respond-below(s) {
         display: none; 
-      }  
-    }
+    }  
   }
 }
 
@@ -155,7 +152,6 @@
   background: #59C173;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
   @include respond-below(m) {
     width: $full;
@@ -195,12 +191,12 @@
   background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
   @include respond-below(m) {
     width: $full;
   }
-
-  >.bricks__item {
-    justify-content: center;
-  }
 }
+
+.sketchbook-item {
+  margin-bottom: $space-lg;
+}
+
