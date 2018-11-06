@@ -1,0 +1,15 @@
+.description {
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $space-xs;
+  width: 100%;
+}
+
+.description__title {
+  margin: 0;
+}
+
+.description--block {
+  display: block;
+}
