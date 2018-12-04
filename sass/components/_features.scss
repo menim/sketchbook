@@ -6,17 +6,37 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
-  padding-left: 0;
+  padding: 0 $space-sm;
 }
 
 .features__item {
   line-height: 1.4;
   list-style: none;
   margin-bottom: $space-xl;
-  padding: 0 10%;
+  padding: $space-md;
   text-align: center;
-  width: 50%;
+  width: 22%;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,.11);
+  border-radius: .625rem;
+
+  @include respond-below(l) {
+    width: 24%;
+  }
+
+  @include respond-below(m) {
+    width: 45%
+  }
+
+  @include respond-below(xs) {
+    width: 100%;
+  }
+}
+
+.features__header {
+  font-size: $text-md;
+  margin: $space-sm;
 }
 
 .features__description {
