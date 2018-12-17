@@ -29,6 +29,7 @@
     "husky": "^1.2.1",
     "jshint-stylish": "^2.2.1",
     "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
     "run-sequence": "^2.1.0",
     "stylelint": "^9.3.0",
     "stylelint-config-prettier": "^4.0.0",
