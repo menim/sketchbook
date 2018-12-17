@@ -43,7 +43,27 @@
     "stylelint-order": "^2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --debug js/myown.js",
+    "lint:write": "eslint --debug js/myown.js --fix",
+    "prettier": "prettier --write js/myown.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.(css|scss)": [
+        "stylelint --fix --config ./.stylelintrc-format",
+        "git add"
+      ],
+      "*.js": [
+        "npm run prettier",
+        "npm run lint",
+        "git add"
+      ]
+    }
   },
   "author": "Anatoliy <mel198629@gmail.com> (http://artoko.org)",
   "license": "ISC",
