@@ -5,6 +5,10 @@
   &__wrapper {
     text-align: center;
     width: 25%;
+
+    &:nth-child(n+5) {
+      margin-top: $space-md;
+    }
   }
 
   &__preview {
