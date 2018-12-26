@@ -43,9 +43,9 @@
     "stylelint-order": "^2.0.0"
   },
   "scripts": {
-    "lint": "eslint --debug js/myown.js",
-    "lint:write": "eslint --debug js/myown.js --fix",
-    "prettier": "prettier --write js/myown.js"
+    "lint": "eslint --debug js/*.js",
+    "lint:write": "eslint --debug js/*.js --fix",
+    "prettier": "prettier --write js/*.js"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,21 @@
+.sketchbook {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__wrapper {
+    text-align: center;
+    width: 25%;
+  }
+
+  &__preview {
+    width: 100%;
+    height: auto;
+  }
+
+  &__item {
+    background-color: $white;
+    border-radius: 5px;
+    padding: $space-md $space-md;
+    width: 200px;
+  }
+}
