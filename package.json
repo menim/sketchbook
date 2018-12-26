@@ -67,5 +67,7 @@
   },
   "author": "Anatoliy <mel198629@gmail.com> (http://artoko.org)",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^4.4.6"
+  }
 }
