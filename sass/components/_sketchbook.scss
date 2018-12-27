@@ -3,13 +3,134 @@
   border-radius: 5px;
   padding: $space-md;
   width: 250px;
+
+  &--theme-janna {
+
+    @include linear-gradient-add(#f4e4d7);
+  }
+
+  &--theme-scorpion {
+
+    @include linear-gradient-add(#5e5e5e);
+  }
   
+  &--theme-sushi {
+
+    @include linear-gradient-add(#969A30);
+  }
+
+  &--theme-hotpink {
+
+    @include linear-gradient-add(#ff589f);
+  }
+  
+  &--theme-bitterlemon {
+
+    @include linear-gradient-add(#e6e60c);
+  }
+
+  &--theme-illusion {
+
+    @include linear-gradient-add(#c86586);
+  }
+
+  &--theme-bostonblue {
+
+    @include linear-gradient-add(#337bbe);
+  }
+
+  &--theme-cherub {
+
+    @include linear-gradient-add(#fadceb);
+  }
+
+  &--theme-palecanary {
+
+    @include linear-gradient-add(#fffe9f);
+  }
+
+  &--theme-orangepeel {
+
+    @include linear-gradient-add(#ffa101);
+  }
+
+  &--theme-perano {
+
+    @include linear-gradient-add(#b7c5f1);
+  }
+
+  &--theme-bananamania {
+
+    @include linear-gradient-add(#fce5c0);
+  }
+
+  &--theme-gold {
+
+    @include linear-gradient-add(#ffd600);
+  }
+
+  &--theme-shalimar {
+
+    @include linear-gradient-add(#ffd600);
+  }
+
+  &--theme-parisdaisy {
+
+    @include linear-gradient-add(#f9ff75);
+  }
+
+  &--theme-visvis {
+
+    @include linear-gradient-add(#ffee9e);
+  }
+
+  &--theme-serenade {
+
+    @include linear-gradient-add(#fff4e6);
+  }
+
+  &--theme-lima {
+
+    @include linear-gradient-add(#86ce1c);
+  }
+
+  &--theme-lavenderpink {
+
+    @include linear-gradient-add(#fca5c5);
+  }
+
+  &--theme-spray {
+
+    @include linear-gradient-add(#6aeeee);
+  }
+
+  &--theme-perwinklegray {
+
+    @include linear-gradient-add(#adc6e1);
+  }
+
+  &--theme-yellow {
+
+    @include linear-gradient-add(#ffff00);
+  }
+
+  &--theme-hawaiiantan {
+
+    @include linear-gradient-add(#9e5a18);
+  }
+
+
+
+
+
+
   &__link {
     display: flex;
     text-decoration: none;
   }
   
   &__preview {
+    filter: drop-shadow(0 0 6px rgba(3, 51, 51, .5));
     height: auto;
     max-width: 200px;
     width: 100%;

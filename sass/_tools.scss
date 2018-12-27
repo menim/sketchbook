@@ -1,6 +1,7 @@
 /* 
   get random number in range between min and max value
 */
+
 @function random-number($min, $max) {
   $rand: random();
   $random-num: $min + floor($rand * (($max - $min) + 1));
@@ -12,15 +13,18 @@
 /* 
   add letters-animation (change fill property) to every letter in logo element 
 */
+
 @mixin letters-animation ($letters-colors, $length-letter) {
   $len: length($letters-colors);
 
   @for $i from 1 through $length-letter {
+
     &:nth-child(#{$i}) {
       animation: letter-animation#{$i} 4s cubic-bezier(.05, .35, 1, .77) infinite;
     }
 
     @keyframes letter-animation#{$i} {
+
       0% {
         fill: nth($letters-colors, random-number(1, $len));
       }
@@ -45,6 +49,7 @@
   $index: str-index($string, $search);
 
   @if $index {
+
     @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
   }
 
@@ -90,8 +95,9 @@
 }
 
 // edit font rendering -> tip: use for light text on dark backgrounds
+
 @mixin fontSmooth {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -107,25 +113,36 @@ $breakpoints: (
 );
 
 // @include respond-below(sm) {}
+
 @mixin respond-below($breakpoint) {
 
   // If the breakpoint exists in the map.
+
   @if map-has-key($breakpoints, $breakpoint) {
 
     // Get the breakpoint value.
     $breakpoint-value: map-get($breakpoints, $breakpoint);
 
     // Write the media query.
+
     @media (max-width: ($breakpoint-value - 1)) {
+
       @content;
     }
   
-  // If the breakpoint doesn't exist in the map.
-  } @else {
+    // If the breakpoint doesn't exist in the map.
+  }
+
+  @else {
 
     // Log a warning.
+
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
+}
+
+@mixin linear-gradient-add($color) {
+  background: linear-gradient($color 0%, $color 65%, $white 65%, $white 100%);
 }
 
 
