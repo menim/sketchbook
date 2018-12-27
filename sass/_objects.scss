@@ -9,3 +9,19 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.l-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+
+  &:nth-child(n+5) {
+    margin-top: $space-md*2;
+  }
+}
