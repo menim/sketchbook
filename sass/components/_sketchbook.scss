@@ -118,12 +118,7 @@
 
     @include linear-gradient-add(#9e5a18);
   }
-
-
-
-
-
-
+  
   &__link {
     display: flex;
     text-decoration: none;
@@ -132,8 +127,7 @@
   &__preview {
     filter: drop-shadow(0 0 6px rgba(3, 51, 51, .5));
     height: auto;
-    max-width: 200px;
-    width: 100%;
+    width: 200px;
   }
 
   &__description {

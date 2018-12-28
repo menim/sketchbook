@@ -1,3 +1,5 @@
+'use strict';
+
 // const mySwiper = new Swiper('.swiper-container', {
 
 //   // If we need pagination
@@ -17,22 +19,22 @@
 //   },
 // });
 
-document.querySelectorAll('.swiper-container').forEach(item => {
+document.querySelectorAll('.swiper-container').forEach(function (item) {
   new Swiper(item, {
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination'
     },
 
     // Navigation arrows
     navigation: {
       nextEl: '',
-      prevEl: '',
+      prevEl: ''
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: '',
-    },
+      el: ''
+    }
   });
 });
