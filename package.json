@@ -63,7 +63,8 @@
         "npm run lint",
         "git add"
       ]
-    }
+    },
+    "ignore": ["**/sass/generic/_swiper.scss","**/js/**/*.js"]
   },
   "author": "Anatoliy <mel198629@gmail.com> (http://artoko.org)",
   "license": "ISC",
