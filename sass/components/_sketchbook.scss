@@ -1,5 +1,4 @@
 .sketchbook {
-  align-items: center;
   background-color: $white;
   border-radius: 5px;
   display: flex;
@@ -160,7 +159,7 @@
     border: 2px solid $white;
     padding: $space-xxs $space-sm;
     text-decoration: none;
-    transition: color 300ms ease-out, border 300ms ease-out;
+    transition: color 300ms ease-out, border 300ms;
   
     &:hover {
       color: $scooter;
