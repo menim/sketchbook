@@ -129,17 +129,12 @@
     height: auto;
     width: 200px;
   }
-
-  &__description {
-    margin-top: $space-xs;
-    text-align: left;
-    width: 100%;
-  }
-
+  
   &__title {
     color: $black;
     font-size: $text-base-size;
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: $space-xs;
     text-align: center;
   }
 
