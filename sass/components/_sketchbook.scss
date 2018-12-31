@@ -137,7 +137,17 @@
   }
 
   &__title {
-    font-weight: 400;
+    color: $black;
+    font-size: $text-base-size;
     margin: 0;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: #bfbfbf;
+    display: block;
+    font-size: $text-xs;
+    margin-bottom: $space-xxxs;
+    text-transform: none;
   }
 }
