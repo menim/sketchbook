@@ -1,4 +1,5 @@
 .sketchbook {
+  align-items: center;
   background-color: $white;
   border-radius: 5px;
   display: flex;
@@ -9,7 +10,7 @@
 
   &--theme-janna {
 
-    @include linear-gradient-add(#f4e4d7);
+    @include linear-gradient-add(#f4e4d7, 56%);
   }
 
   &--theme-scorpion {
@@ -29,7 +30,7 @@
   
   &--theme-bitterlemon {
 
-    @include linear-gradient-add(#e6e60c);
+    @include linear-gradient-add(#e6e60c, 56%);
   }
 
   &--theme-illusion {
@@ -44,12 +45,12 @@
 
   &--theme-cherub {
 
-    @include linear-gradient-add(#fadceb);
+    @include linear-gradient-add(#fadceb, 56%);
   }
 
   &--theme-palecanary {
 
-    @include linear-gradient-add(#fffe9f);
+    @include linear-gradient-add(#fffe9f, 59%);
   }
 
   &--theme-orangepeel {
@@ -74,22 +75,22 @@
 
   &--theme-shalimar {
 
-    @include linear-gradient-add(#ffd600);
+    @include linear-gradient-add(#ffd600, 59%);
   }
 
   &--theme-parisdaisy {
 
-    @include linear-gradient-add(#f9ff75);
+    @include linear-gradient-add(#f9ff75, 59%);
   }
 
   &--theme-visvis {
 
-    @include linear-gradient-add(#ffee9e);
+    @include linear-gradient-add(#ffee9e, 59%);
   }
 
   &--theme-serenade {
 
-    @include linear-gradient-add(#fff4e6);
+    @include linear-gradient-add(#fff4e6,56%);
   }
 
   &--theme-lima {
