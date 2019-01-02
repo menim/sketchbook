@@ -18,8 +18,8 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+  cursor: pointer;
 }
-
 
 .swiper-container {
   width: 250px;
@@ -28,7 +28,6 @@
   padding-top: 10px;
   margin-top: -10px;
 }
-
 
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
