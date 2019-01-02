@@ -1,0 +1,29 @@
+.wht-sketch {
+  position: relative;
+  top: $space-xxl;
+  left: $space-lg;
+  background-color: $white;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,.11);
+  color: $white;
+  padding: $space-lg;
+  width: 40%;
+
+  &__header {
+    margin-bottom: $space-unit;
+    margin-top: 0;
+  }
+
+  &__list {
+    font-family: raleway, sans-serif;
+    margin-bottom: 0;
+    padding-left: $space-unit;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__item + &__item {
+    margin-top: $space-unit;
+  }
+}
