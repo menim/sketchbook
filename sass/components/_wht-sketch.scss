@@ -1,6 +1,6 @@
 .wht-sketch {
   position: relative;
-  top: $space-xxl;
+  top: $space-xl;
   left: $space-lg;
   background-color: $white;
   box-shadow: 0 8px 24px 0 rgba(0,0,0,.11);
@@ -9,6 +9,7 @@
   width: 40%;
 
   &__header {
+    font-size: $text-xxl;
     margin-bottom: $space-unit;
     margin-top: 0;
   }
