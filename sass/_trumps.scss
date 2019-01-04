@@ -1,4 +1,5 @@
 //add multiline backgorund for inline elements;
+
 .multiline-bg {
   background-color: $scooter-80-op;
   box-decoration-break: clone;
@@ -11,4 +12,28 @@
 
 .multiline-bg--md {
   box-shadow: 1em 0 0 $scooter-80-op, -1em 0 0 $scooter-80-op;
+}
+
+.vert-lg-margin {
+  margin: $space-xxxl auto;
+}
+
+.is-hidden {
+  filter: blur(20px);
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.is-visible {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-1 {
+  transition: opacity 500ms ease-out 500ms, transform 500ms ease-out 500ms, filter 500ms ease-out 500ms;
+}
+
+.fade-in-2 {
+  transition: opacity 500ms ease-out, transform 500ms ease-out, filter 500ms ease-out;
 }
