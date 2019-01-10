@@ -1,4 +1,5 @@
 document.querySelectorAll('.swiper-container').forEach(item => {
+  // eslint-disable-next-line no-new
   new Swiper(item, {
     // If we need pagination
     pagination: {
@@ -21,32 +22,17 @@ document.querySelectorAll('.swiper-container').forEach(item => {
 const videoEl = document.querySelector('.video');
 const sketchEl = document.querySelector('.wht-sketch');
 const descriptCont = document.querySelector('.description');
-
-let descriptContYPos = Math.round(descriptCont.getBoundingClientRect().top);
-
-function debounce(func, wait = 10, immediate = true) {
-  let timeout;
-  return function () {
-    let context = this, args = arguments;
-    let later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    let callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-};
+const viewHeight = window.innerHeight || document.documentElement.clientHeight;
 
 function checkPosition() {
-  let windowY = window.scrollY;
-  if(windowY >= descriptContYPos) {
+  const descriptContYPos = descriptCont.getBoundingClientRect().top;
+  if (viewHeight >= descriptContYPos) {
     videoEl.classList.add('is-visible');
     sketchEl.classList.add('is-visible');
     videoEl.classList.remove('is-hidden');
     sketchEl.classList.remove('is-hidden');
+    window.removeEventListener('scroll', checkPosition);
   }
 }
 
-window.addEventListener('scroll', debounce(checkPosition));
+window.addEventListener('scroll', checkPosition);
