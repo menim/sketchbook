@@ -2,16 +2,18 @@
 
 .multiline-bg {
   background-color: $scooter-80-op;
-  box-decoration-break: clone;
+  box-shadow: .5em 0 0 $scooter-80-op, -.5em 0 0 $scooter-80-op;
   line-height: 1.2;
 }
 
-.multiline-bg--sm {
-  box-shadow: .5em 0 0 $scooter-80-op, -.5em 0 0 $scooter-80-op;
-}
+@supports (-webkit-box-decoration-break: clone) or (box-decoration-break: clone) {
 
-.multiline-bg--md {
-  box-shadow: 1em 0 0 $scooter-80-op, -1em 0 0 $scooter-80-op;
+  .multiline-bg {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: none;
+    padding: 0 .3em;
+  }
 }
 
 .vert-lg-margin {
@@ -31,9 +33,9 @@
 }
 
 .fade-in-1 {
-  transition: opacity 500ms ease-out 500ms, transform 500ms ease-out 500ms, filter 500ms ease-out 500ms;
+  transition: opacity 500ms ease-out 700ms, transform 500ms ease-out 700ms, filter 500ms ease-out 700ms;
 }
 
 .fade-in-2 {
-  transition: opacity 500ms ease-out, transform 500ms ease-out, filter 500ms ease-out;
+  transition: opacity 500ms ease-out 600ms, transform 500ms ease-out 600ms, filter 500ms ease-out 600ms;
 }
