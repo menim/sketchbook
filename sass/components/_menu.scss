@@ -1,82 +1,77 @@
 .menu {
+  position: relative;
   align-items: center;
   display: flex;
-  height: 95px;
   justify-content: space-between;
-  position: relative;
   z-index: 3;
-}
 
-.menu__list {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0;
-}
-
-.menu__item {
-  margin-left: $space-xl;
-
-  &:first-child {
-    margin-left: 0;
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
   }
 
-  &:nth-child(1) {
-    .menu__link::after {
-      background-color: $red-orange;
+  &__item {
+    font-size: $text-md;
+    margin-left: $space-xl;
+
+    &--small {
+      font-size: $text-base-size;
+      margin-left: $space-md;
+    }
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 
-  &:nth-child(2) {
-    .menu__link::after {
-      background-color: $scooter;
+  &__link {
+    position: relative;
+    color: $white;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &--red-orange-theme {
+
+      &::after {
+        background-color: $red-orange;
+      }
     }
-  }
 
-  &:nth-child(3) {
-    .menu__link::after {
-      background-color: $green-haze;
+    &--scooter-theme {
+
+      &::after {
+        background-color: $scooter;
+      }
     }
-  }
 
-  &:nth-child(4) {
-    .menu__link::after {
-      background-color: $honey-flower;
+    &--green-haze-theme {
+
+      &::after {
+        background-color: $green-haze;
+      }
     }
-  }
-}
-
-.menu__link {
-  color: $white;
-  font-size: $text-md;
-  letter-spacing: 1px;
-  position: relative;
-  text-decoration: none;
-
-  &:nth-child(1) {
-    &::after {
-      background-color: $red-orange;
-    }
-  }
-
-  &:hover {
 
     &::after {
-      height: 2px;
-      width: 100%;
+      position: absolute;
+      right: 0;
+      //background-color: $studio;
+      bottom: -5px;
+      left: 0;
+      content: '';
+      margin: 0 auto;
+      transition: width .5s cubic-bezier(.52, .01, .16, 1);
+      width: 0;
     }
-  }
 
-  &::after {
-    //background-color: $studio;
-    bottom: -5px;
-    content: '';
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    transition: width .5s cubic-bezier(.52, .01, .16, 1);
-    width: 0;
+    &:hover {
+
+      &::after {
+        height: 2px;
+        width: 100%;
+      }
+    }
   }
 }
