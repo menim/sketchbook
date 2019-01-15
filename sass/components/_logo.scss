@@ -2,11 +2,16 @@
   display: block;
   width: 250px;
 
+  &--small {
+    width: 150px;
+  }
+
   &:hover {
     cursor: pointer;
   }
 }
 
 .letter {
+
   @include letters-animation($letters-color, 11);
 }
