@@ -1,8 +1,17 @@
 .header {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  
+
+  &--video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &--simple {
+    height: 95px;
+    background-color: #a2a09e;
+    box-shadow: 0 3px 10px $black-30-op;
+  }
+
   &__top {
     display: flex;
     align-items: center;
@@ -23,7 +32,6 @@
     z-index: 1;
   }
 }
-
 
 .overlay {
   position: absolute;
