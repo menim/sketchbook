@@ -1,7 +1,22 @@
 .btn {
-  display: inline-flex;
-  line-height: 1;
-  position: relative;
+  border-radius: 7px;
+  color: $white;
+  background-color: $scooter;
+  border: 2px solid transparent;
+  font-size: $text-base-size;
+  font-family: raleway, sans-serif;
+  padding: $space-xxs $space-sm;
   text-decoration: none;
-  white-space: nowrap;
+  transition: color 300ms ease-out, border 300ms;
+
+  &--lg {
+    font-size: $text-md;
+    padding: $space-xxs $space-md;
+  }
+
+  &:hover {
+    color: $scooter;
+    background-color: $white;
+    border: 2px solid $scooter; 
+  }
 }
