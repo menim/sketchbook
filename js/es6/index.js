@@ -19,6 +19,8 @@ document.querySelectorAll('.swiper-container').forEach(item => {
   });
 });
 
+let rellax = new Rellax('.rellax');
+
 const videoEl = document.querySelector('.video');
 const sketchEl = document.querySelector('.wht-sketch');
 const descriptCont = document.querySelector('.description');
@@ -29,8 +31,8 @@ function checkPosition() {
   if (viewHeight >= descriptContYPos) {
     videoEl.classList.add('is-visible');
     sketchEl.classList.add('is-visible');
-    videoEl.classList.remove('is-hidden');
-    sketchEl.classList.remove('is-hidden');
+    videoEl.classList.remove('is-hidden-down');
+    sketchEl.classList.remove('is-hidden-up');
     window.removeEventListener('scroll', checkPosition);
   }
 }
