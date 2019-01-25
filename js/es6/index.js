@@ -23,11 +23,10 @@ let rellax = new Rellax('.rellax');
 
 const videoEl = document.querySelector('.video');
 const sketchEl = document.querySelector('.wht-sketch');
-const descriptCont = document.querySelector('.description');
 const viewHeight = window.innerHeight || document.documentElement.clientHeight;
 
 function checkPosition() {
-  const descriptContYPos = descriptCont.getBoundingClientRect().top;
+  const descriptContYPos = sketchEl.getBoundingClientRect().bottom;
   if (viewHeight >= descriptContYPos) {
     videoEl.classList.add('is-visible');
     sketchEl.classList.add('is-visible');
