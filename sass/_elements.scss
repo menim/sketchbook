@@ -1,15 +1,19 @@
-body {
-  font: #{$text-base-size} / #{$line-height-default} 'raleway thin', sans-serif;
-}
-
 //apply a natural box layout model to all elements, but allowing components to change
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+
+body {
+  font: #{$text-base-size} / #{$line-height-default} 'raleway thin', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
