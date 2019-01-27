@@ -1,21 +1,13 @@
-document.querySelectorAll('.swiper-container').forEach(item => {
-  // eslint-disable-next-line no-new
-  new Swiper(item, {
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '',
-      prevEl: '',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '',
-    },
+document.querySelectorAll('.slider-container').forEach(sliderItem => {
+  let slider = tns({
+    container: sliderItem,
+    gutter: 25,
+    //edgePadding: 15,
+    slideBy: 1,
+    items: 1,
+    controls: false,
+    navPosition: 'bottom',
+    mouseDrag: true
   });
 });
 

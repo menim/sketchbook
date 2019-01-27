@@ -1,8 +1,8 @@
 //add multiline backgorund for inline elements;
 
 .multiline-bg {
-  background-color: $scooter-80-op;
-  box-shadow: .5em 0 0 $scooter-80-op, -.5em 0 0 $scooter-80-op;
+  background-color: $juniper-80-op;
+  box-shadow: .5em 0 0 $juniper-80-op, -.5em 0 0 $juniper-80-op;
   line-height: 1.2;
 }
 
@@ -20,22 +20,26 @@
   margin: $space-xxxl auto;
 }
 
-.is-hidden {
-  filter: blur(20px);
+.is-hidden-up {
   opacity: 0;
-  transform: translateY(30%);
+  transform: translate3d(0, 50px, 0);
+}
+
+.is-hidden-down {
+  opacity: 0;
+  transform: translate3d(0, -50px, 0);
 }
 
 .is-visible {
-  filter: blur(0px);
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
 }
 
-.fade-in-1 {
-  transition: opacity 500ms ease-out 700ms, transform 500ms ease-out 700ms, filter 500ms ease-out 700ms;
+.fade-in {
+  transition: opacity .35s cubic-bezier(0.33, 0.66, 0.66, 1) .2s, transform .35s cubic-bezier(0.33, 0.66, 0.66, 1) .2s;
 }
 
-.fade-in-2 {
-  transition: opacity 500ms ease-out 600ms, transform 500ms ease-out 600ms, filter 500ms ease-out 600ms;
+.hide-overflow {
+  overflow: hidden;
 }
+
