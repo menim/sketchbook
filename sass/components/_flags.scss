@@ -1,0 +1,13 @@
+.flags {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    padding-right: $space-md;
+    vertical-align: middle;
+  }
+
+  svg+svg {
+    margin-left: $space-xs;
+  }
+}
