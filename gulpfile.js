@@ -29,6 +29,8 @@ const purgecss = require('gulp-purgecss');
 // const svgSprite = require('gulp-svg-sprite');
 const critical = require('critical');
 
+const merge = require('merge-stream');
+
 gulp.task('critical', ['build'], () => {
   critical.generate({
     inline: true,
@@ -40,7 +42,7 @@ gulp.task('critical', ['build'], () => {
 });
 
 gulp.task('toES6', () => {
-  gulp
+  const mainPage = gulp
     .src('js/es6/index.js')
     .pipe(
       babel({
@@ -53,6 +55,22 @@ gulp.task('toES6', () => {
         stream: true,
       }),
     );
+
+    const productPage = gulp
+    .src('js/es6/product.js')
+    .pipe(
+      babel({
+        presets: ['env'],
+      }),
+    )
+    .pipe(gulp.dest('js'))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      }),
+    );
+
+    merge(mainPage, productPage);
 });
 
 gulp.task('prefix', () => {
