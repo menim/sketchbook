@@ -3,56 +3,76 @@
 .tns-outer {
   width: 100%;
   padding: 0 !important; // remove padding: clientWidth = width + padding (0) = width
+
   [hidden] { display: none !important; }
+
   [aria-controls], [data-action] { cursor: pointer; }
 }
+
 .tns-slider {
   -webkit-transition: all 0s;
   -moz-transition: all 0s;
   transition: all 0s;
+
   > .tns-item {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    text-align: center;
   }
 }
 
+.tns-nav {
+  text-align: center;
+}
+
 .tns-horizontal {
+
   &.tns-subpixel {
     white-space: nowrap;
+
     > .tns-item {
       display: inline-block;
       vertical-align: top;
       white-space: normal;
     }
   }
+
   &.tns-no-subpixel {
+
     &:after {
       content: '';
       display: table;
       clear: both;
     }
+
     > .tns-item {
       float: left;
     }
   }
+
   &.tns-carousel {
+
     &.tns-no-subpixel {
+
       > .tns-item {
         margin-right: -100%;
       }
     }
   }
 }
+
 .tns-no-calc {
   position: relative;
   left: 0;
 }
+
 .tns-gallery {
   position: relative;
   left: 0;
   min-height: 1px; // make sure slider container is visible
   // overflow: hidden;
+
   > .tns-item {
     position: absolute;
     left: -100%;
@@ -60,31 +80,39 @@
     -moz-transition: transform 0s, opacity 0s;
     transition: transform 0s, opacity 0s;
   }
+
   > .tns-slide-active {
     position: relative;
     left: auto !important;
   }
+
   > .tns-moving {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
   }
 }
+
 .tns-autowidth { display: inline-block; }
+
 .tns-lazy-img {
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
   opacity: 0.6;
+
   &.tns-complete { opacity: 1; }
 }
+
 .tns-ah {
   -webkit-transition: height 0s;
   -moz-transition: height 0s;
   transition: height 0s;
 }
 //.tns-ovh { overflow: hidden; }
+
 .tns-visually-hidden { position: absolute; left: -10000em; }
+
 .tns-transparent { opacity: 0; visibility: hidden; }
 
 .tns-fadeIn {
@@ -92,6 +120,7 @@
   filter: alpha(opacity=100);
   z-index: 0;
 }
+
 .tns-normal, .tns-fadeOut {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -100,8 +129,10 @@
 
 
 // *** Fix a viewport issue in initialization
+
 .tns-vpfix {
   white-space: nowrap;
+
   > div, > li {
     display: inline-block;
   }
@@ -114,25 +145,29 @@ $count: 70;
 $perpage: 3;
 
 .tns-t {
+
   &-subp2 {
+    position: relative;
     margin: 0 auto;
     width: $width;
-    position: relative;
     height: $height;
     overflow: hidden;
   }
+
   &-ct {
+    position: absolute;
+    right: 0;
     width: (100% * $count / $perpage);
     width: -webkit-calc(100% * #{$count} / #{$perpage});
     width: -moz-calc(100% * #{$count} / #{$perpage});
     width: calc(100% * #{$count} / #{$perpage});
-    position: absolute;
-    right: 0;
+
     &:after {
       content: '';
       display: table;
       clear: both;
     }
+
     > div {
       width: (100% / $count);
       width: -webkit-calc(100% / #{$count});
@@ -141,5 +176,31 @@ $perpage: 3;
       height: $height;
       float: left;
     }
+  }
+}
+
+.nav-customize {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    border: #739491 1px solid;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+    
+  li+li {
+    margin-left: 5px;
+  }
+
+  .tns-nav-active {
+    border: #3d4142 1px solid;
+    box-shadow: 0 0 5px 0 rgba(61, 65, 66, .7);
   }
 }
