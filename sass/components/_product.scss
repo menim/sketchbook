@@ -8,13 +8,14 @@
   &__description {
     width: 35%;
     border-left: 1px solid $black;
-    padding: $space-md 0 $space-md $space-md;
+    padding: 0 0 $space-md $space-md;
     text-align: center;
   }
 
   &__header {
     font-size: $text-lg;
     margin-top: 0;
+    text-align: left;
   }
 
   &__overview {
