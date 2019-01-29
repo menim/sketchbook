@@ -2,12 +2,11 @@ document.querySelectorAll('.slider-container').forEach(sliderItem => {
   let slider = tns({
     container: sliderItem,
     gutter: 25,
-    //edgePadding: 15,
     slideBy: 1,
     items: 1,
     controls: false,
     navPosition: 'bottom',
-    mouseDrag: true
+    mouseDrag: true,
   });
 });
 
@@ -18,7 +17,8 @@ const sketchEl = document.querySelector('.wht-sketch');
 const viewHeight = window.innerHeight || document.documentElement.clientHeight;
 
 function checkPosition() {
-  const descriptContYPos = sketchEl.getBoundingClientRect().bottom;
+  let descriptContYPos = sketchEl.getBoundingClientRect();
+  descriptContYPos = descriptContYPos.top + (descriptContYPos.height/2)
   if (viewHeight >= descriptContYPos) {
     videoEl.classList.add('is-visible');
     sketchEl.classList.add('is-visible');
@@ -31,7 +31,7 @@ window.addEventListener('scroll', checkPosition);
 
 function findVideo() {
   let video = document.querySelector('.video');
-    setupVideo(video);
+  setupVideo(video);
 }
 
 function setupVideo(video) {
