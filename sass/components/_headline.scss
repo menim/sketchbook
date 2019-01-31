@@ -1,19 +1,8 @@
 .headline {
-  position: relative;
-  color: $white;
-  letter-spacing: 1px;
-  margin-top: 320px;
-  width: 65%;
-  z-index: 4;
-}
+  color: $black; 
+  font-size: $text-xxl;
 
-.headline__header {
-  font-size: $text-xxxl;
-}
-
-.headline__content {
-  font-family: raleway, sans-serif;
-  font-size: $text-md;
-  margin-top: 32px;
-  width: 94%;
+  &--center {
+    text-align: center;
+  }
 }

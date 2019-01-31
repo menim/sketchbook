@@ -26,10 +26,10 @@
 
   &__price {
     display: block;
-    font-size: $text-xl;
-    text-align: center;
-    padding: 0 0 $space-sm;
-    margin: 0 $space-lg $space-sm;
-    border-bottom: 1px solid $black;
+    font-size: $text-md;
+    text-align: left;
+    //padding: 0 0 $space-sm;
+    //margin: 0 $space-lg $space-sm;
+    //border-bottom: 1px solid $black;
   }
 }

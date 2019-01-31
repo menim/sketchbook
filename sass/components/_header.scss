@@ -8,8 +8,8 @@
 
   &--simple {
     height: 95px;
-    box-shadow: 0 3px 10px $black-50-op;
-    background-color:  $black-50-op;
+    box-shadow: 0 3px 10px $cup-code;
+    background-color:  $cup-code;
   }
 
   &__top {
@@ -30,6 +30,26 @@
 
   &__logo {
     z-index: 3;
+  }
+
+  &__description {
+    position: relative;
+    color: $white;
+    width: 65%;
+    margin-top: 320px;
+    z-index: 4;  
+    transform: rotateX(0);
+  }
+
+  &__title {
+    font-size: $text-xxxl;
+    letter-spacing: 1px;
+  }
+
+  &__content {
+    font-size: $text-md;
+    margin-top: 32px;
+    width: 94%;
   }
 }
 

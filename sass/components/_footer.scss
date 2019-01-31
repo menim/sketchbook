@@ -1,6 +1,7 @@
 .footer {
-  background-color:#a2a09e;
+  background-color: $cup-code;
   padding: $space-lg 0;
+  color: $white;
 
   &__top {
     display: flex;
@@ -8,7 +9,7 @@
   }
 
   &__bottom {
-    border-top: 2px solid $scooter;
+    border-top: 1px solid $white;
     display: flex;
     justify-content: space-between;
     padding-top: $space-unit;
