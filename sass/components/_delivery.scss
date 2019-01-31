@@ -1,0 +1,27 @@
+.delivery {
+  color: $black;
+  font-size: $text-base-size;
+  line-height: 1.5;
+  display: flex;
+
+  &__description {
+    width: 60%;
+  }
+
+  &__title {
+    font-size: $text-lg;
+
+  }
+
+  &__list {
+    padding-left: 0;
+
+    li+li {
+      margin-top: $space-md;
+    }
+  }
+
+  &__img {
+    width: 40%;
+  }
+}
