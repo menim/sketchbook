@@ -1,6 +1,7 @@
 //add multiline backgorund for inline elements;
 
 .multiline-bg {
+  color: $white;
   background-color: $juniper-80-op;
   box-shadow: .5em 0 0 $juniper-80-op, -.5em 0 0 $juniper-80-op;
   line-height: 1.2;
@@ -40,6 +41,21 @@
 }
 
 .hide-overflow {
+  overflow: hidden;
+}
+
+.v-a-bottom {
+  vertical-align: bottom;
+}
+
+.defs-only {
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
   overflow: hidden;
 }
 
