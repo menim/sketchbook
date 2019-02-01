@@ -1,0 +1,20 @@
+.aside-info {
+  color: $white;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.4);
+
+  &__item {
+    margin-bottom: $space-lg;
+    line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: $text-base-size;
+    margin-bottom: $space-xs;
+  }
+}

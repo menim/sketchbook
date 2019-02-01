@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+
+  &__main {
+    width: 60%;
+  }
+
+  &__aside-info {
+    align-self: center;
+    background-color: $cup-code; 
+    width: 20%;
+    padding: $space-lg;
+
+  }
+
+  &__intro {
+    font-size: $text-md;
+    width: 75%;
+    line-height: 1.5;
+  }
+}

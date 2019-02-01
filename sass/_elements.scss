@@ -17,3 +17,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+[href^="mailto"] {
+  color: $white;
+  text-decoration: none;
+}

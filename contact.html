@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Оплата и доставка</title>
+  <title>Контакти</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -59,17 +59,44 @@
       </div>
     </div>
   </header>
-<main class="main">
-  <form action="" id="contact">
-    <label for="">Ім'я</label><input  type="text">
-    <label for="">Email</label><input type="text">
-    <label for="">Телефон</label><input type="text">   
-    <textarea name="" id="" cols="30" rows="10">
-      
+<main class="main l-container">
+  <div class="contact">
+  <section class="contact__main">
+  <h1 class="headline">Контакти</h1>
+  <p class="contact__intro">
+    По питанням співпраці, пропозицій чи замовлення скетчбука пишіть нам або залишайте телефон и ми передзвонимо Вам
+  </p>
+  <form class="form" action="" id="contact">
+    <label class="form__label multiline-bg" for="name">Ваше ім'я</label><input class="form__input" name="name" id="name" type="text" />
+    <label class="form__label multiline-bg" for="email">Email адреса</label><input class="form__input" name="email" id="email" type="text" />
+    <label class="form__label multiline-bg" for="telephone">Ваш телефон</label><input class="form__input" name="telephone" id="telephone" type="text" /> 
+    <label class="form__label multiline-bg" for="message">Ваше повідомлення</label>  
+    <textarea class="form__input form__input--textarea" name="message"  cols="30" rows="10">
     </textarea> 
-    <label for=""></label><input type="text">
-    <button></button>
+    <button class="btn btn--block btn--lg form__btn">Відправити</button>
   </form>
+  </section>
+  <aside class="aside-info contact__aside-info">
+    <section class="aside-info__item">
+      <h2 class="aside-info__header">Адреса</h2>
+      <address class="aside-info__address">
+        м.Харків, <br />
+        вул.Пушкінська, 7
+      </address>
+    </section>
+    <section class="aside-info__item">
+      <h2 class="aside-info__header">Телефони</h2>
+        <a class="telephone" href="tel: +38066-754-95-64">066-754-95-64</a>
+        <a class="telephone" href="tel: +38097-025-8-646">097-025-86-46</a>
+        <a class="telephone" href="tel: +3093-139-167-04">093-139-67-04</a>
+        <a class="telephone" href="tel: +38050-364-26-87">050-364-26-87</a>
+    </section>
+    <section class="aside-info__item">
+      <h2 class="aside-info__header">Пишіть нам</h2>
+       <a href="mailto:mail@okobook.com">mail@okobook.com</a>
+    </section>
+  </aside>
+  </div>
 </main>
 <footer class="footer">
   <div class="l-container">

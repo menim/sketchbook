@@ -1,0 +1,24 @@
+.form {
+
+  &__label {
+    display: inline-block;
+    font-size: $text-base-size;
+  }
+
+  &__input {
+    border: 0;
+    border-bottom: 1px solid $juniper;
+    display: block;
+    height: 50px;
+    width: 75%;
+    margin-bottom: $space-md;
+  
+    &--textarea {
+      height: 150px;
+    }
+  }
+
+  &__btn {
+    margin-top: 0;
+  }
+}
